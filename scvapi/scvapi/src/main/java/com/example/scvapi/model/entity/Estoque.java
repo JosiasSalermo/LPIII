@@ -13,17 +13,15 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Endereco {
+public class Estoque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String logradouro;
-    private String numero;
-    private String complemento;
-    private String bairro;
-    private String cidade;
-    private String uf;
-    private String cep;
+    private String nome;
+    private String fabricante;
+    private int quantidadeMinima;
+    private int quantidadeMaxima;
+    private int pontoRessuprimento;
 }

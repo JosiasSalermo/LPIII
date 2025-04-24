@@ -13,17 +13,12 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Endereco {
+public class Funcionario extends PessoaFisica{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    private String logradouro;
-    private String numero;
-    private String complemento;
-    private String bairro;
-    private String cidade;
-    private String uf;
-    private String cep;
+    private String especialidade;
+    private String registroConselho;
+    private String dataAdmissao;
+    private Double salario;
+
 }
